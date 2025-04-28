@@ -5,8 +5,7 @@ Definisci una funzione eseguiOperazione che accetta tre parametri: due numeri e 
 
 const add = ( num1 , num2) => num1 + num2;
 
-const eseguiOperazione = (num1, num2, callBack) => {
-console.log(callBack(num1, num2));}
+const eseguiOperazione = (num1, num2, callBack) => callBack(num1, num2);
 
-eseguiOperazione(5, 10, add);
+console.log(eseguiOperazione(5, 10, add));
  
